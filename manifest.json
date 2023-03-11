@@ -18,8 +18,8 @@
 				"<all_urls>"
 			],
 			"js": [
-				"changeStatus.js",
-				"sprintNumber.js"
+				"js/changeStatus.js",
+				"js/sprintNumber.js"
 			]
 		}
 	]

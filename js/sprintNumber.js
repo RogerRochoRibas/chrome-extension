@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const tab = tabs[0];
       chrome.tabs.executeScript(tab.id, {
         code: `
-            let findSprintNumber = async () => {
+            let advanceSprint = async () => {
               const sprintSpans = Array.from(document.querySelectorAll('span'));
               const sprintSpan = sprintSpans.find(span => span.innerText.includes('Sprint 1'));
               if (sprintSpan) {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
               return null;
             }
             
-            findSprintNumber();
+            advanceSprint();
           `
       });
     });
